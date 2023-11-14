@@ -17,7 +17,17 @@ for (let index = 1; index <= 100; index++) {
         console.log(index)
     }
 
-    
+    let mainElement = document.querySelector('main')
+
+    let containerElement = document.createElement('div');
+    containerElement.className = 'container';
+
+    let sectionElement = document.createElement('section');
+    sectionElement.innerHTML = index;
+
+    containerElement.appendChild(sectionElement);
+    mainElement.appendChild(containerElement)
+
 }
 
 
